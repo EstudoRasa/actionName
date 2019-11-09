@@ -1,0 +1,25 @@
+intents:
+  - greet
+  - fala
+entities:
+  - feedback
+
+slots:
+  feedback:
+    type: unfeaturized
+    auto_fill: false
+
+templates:
+  utter_ask_feedback:
+    - text: "Qual é seu nome viado?"
+  utter_submit:
+    - text: "Entou na actipn"
+  utter_fala:
+    - text: "Seu nome e: {feedback}"
+  utter_greet:
+    - text: "Hello! I am restaurant search assistant! How can I help?"
+
+actions:
+  - utter_fala
+forms:
+  - restaurant_form
